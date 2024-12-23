@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #231f1f; /* Ghost background color */
+    color: #e5ddd1; /* Ghost's main body color */
+}
+
+header {
+    background: #231f1f;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #e91c24; /* Subtle red highlight in header */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #e5ddd1;
+}
+
+nav {
+    display: flex; /* Ensures all children are arranged in a row */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the text vertically */
+    gap: 20px; /* Adds space between links */
+    margin-top: 10px;
+    height: 60px; /* Ensures consistent height for the navbar */
+    text-align: center; /* Ensures the text inside links is aligned */
+}
+
+nav a {
+    display: inline-block; /* Ensures text stays inline with consistent alignment */
+    color: #e5ddd1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #1f1f1f; /* Button background */
+    border: 2px solid #e91c24; /* Red border for emphasis */
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    text-align: center; /* Aligns the text inside the button */
+}
+
+/* Add button styles */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #e5ddd1;
+    background-color: #e91c24; /* Primary red for "Download" buttons */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button.secondary {
+    background-color: #1f1f1f; /* Neutral background for "View On GitHub" buttons */
+    border: 2px solid #e91c24; /* Adds red border for secondary buttons */
+}
+
+.button:hover {
+    background-color: #121212; /* Dark hover effect for all buttons */
+    color: #e91c24; /* Red text on hover */
+}
+
+.button.secondary:hover {
+    background-color: #e91c24; /* Red background for secondary button hover */
+    color: #1f1f1f; /* Dark text on hover for secondary buttons */
+}
+
+section {
+    padding: 20px;
+}
+
+.project {
+    background: #1f1f1f;
+    padding: 15px;
+    border: 2px solid #e91c24; /* Red borders for focus */
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #231f1f;
+    border-top: 3px solid #e91c24; /* Footer with red border to mirror header */
+}
+
+footer a {
+    color: #e91c24; /* Red links in footer */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e5ddd1; /* Hover effect for footer links */
+}
